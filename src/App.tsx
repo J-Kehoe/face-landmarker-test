@@ -53,6 +53,10 @@ function App() {
   }
 
   useEffect(() => {
+    loadLandmarker();
+  }, [])
+
+  useEffect(() => {
     if (!isEmptyObject(photo) && isEmptyObject(landmarker)) {
       console.log("photo, no landmarker");
       setLoading(true);
@@ -81,6 +85,7 @@ function App() {
   return (
     <>
       <p>Loading: {loading ? "true" : "false"}</p>
+      <p>Landmarker {!isEmptyObject(landmarker) ? "" : "Not "}Loaded</p>
       {/* @ts-ignore */}
       <img src={photo.src} alt="Photo" style={{ height: "20px" }} />
       <input
