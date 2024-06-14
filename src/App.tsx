@@ -110,7 +110,7 @@ function App() {
           }
         }}
       />
-      <button onClick={loadLandmarker}>Landmarker</button>
+      <button onClick={loadLandmarker}>Load Landmarker</button>
       <Canvas
         style={{
           width: "640px",
