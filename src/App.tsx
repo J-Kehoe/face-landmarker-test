@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import * as MediaPipe from "@mediapipe/tasks-vision";
 import { useControls } from "leva";
 import { TextureLoader } from "three";
-import { PointFace } from "./assets/PointFace";
+// import { PointFace } from "./assets/PointFace";
 
 function isEmptyObject(obj: any): boolean {
   return Object.keys(obj).length === 0 && obj.constructor === Object;
